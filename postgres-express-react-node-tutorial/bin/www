@@ -1,0 +1,9 @@
+//or application entry point. we setup server here
+
+const http = require = require('http');
+const app = require('../app'); //the express app
+
+const port = parseInt(process.env.PORT, 10) || 8000;
+
+const server = http.createServer(app);
+server.listen(port);
